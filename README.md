@@ -1,14 +1,13 @@
 # SKU check project
 
-Checking SKU based on transaction json and stock json 
+Checking Stock Quantity based on transaction.json and stock.json files,
 
-IF sku is not present in stock json it should return 0, qty calculated based on refund and order stocks in transactions  json 
+IF sku is not present in stock.json it should return 0, qty calculated based on refund and order stocks in transactions  json 
 
-If in transactions file type is refund we are adding the qty in stocks and if the type is order then we are reducing the qty
+If in transactions.json file type is 'refund' we are adding the qty in stocks and if the type is order then we are reducing the qty
 
-Example URL : 
-http://localhost:3000/?sku=LTV719449/39/39, 
-result data : {"message":"Available Stocks","data":{"sku":"LTV719449/39/39","qty":8510}}
+Example URL : http://localhost:3000/?sku=LTV719449/39/39, 
+result json data : {"message":"Available Stocks","data":{"sku":"LTV719449/39/39","qty":8510}}
 
 ### Features
 
