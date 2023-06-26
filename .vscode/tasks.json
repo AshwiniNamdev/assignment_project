@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "tsconfig": "simple-typescript-starter/tsconfig.json",
+      "problemMatcher": ["$tsc"]
+    }
+  ]
+}
